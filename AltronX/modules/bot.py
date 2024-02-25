@@ -20,10 +20,10 @@ from telethon import events
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        altron = await e.reply(f"•[ 4ѕт x ѕαиαтαиι тум ]•", parse_mode=None, link_preview=None)
+        altron = await e.reply(f"•[ 🤍🖤️ ᴛᴇᴀᴍ_4ѕт_ғɪɢʜᴛᴇʀ 🖤🤍️ ]•", parse_mode=None, link_preview=None)
         end = datetime.now()
         mp = (end - start).microseconds / 1000
-        await altron.edit(f"αв тєʀα куα нσgα кαℓιуα :|: тєʀα вααρ #SANATANI αα gαуα :|: αвнι внι мσкα нαι внαg ᴊα уαнα ѕє 🍁💓🚩\n» `{mp} ms`")
+        await e.reply(f"➲ #4sᴛ_ʀᴇᴀᴅʏ_ғᴏʀ_ғᴜᴄᴋɪɴɢ 💦💘\n\n➲ sᴜᴅᴏ ▸ @ll4st_MIND_GAMERII\n\n➲ 🍷 ᴘɪɴɢ ▸ `{mp} ms`")
 
 
 @MK1.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
@@ -38,7 +38,7 @@ async def ping(e):
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%sreboot(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        await e.reply(f"тυ ρєι∂α нι куσ нυα вє мєкσ ʀєвσσт мαʀ ∂ιуα")
+        await e.reply(f"➲ ʀᴇʙᴏᴏᴛ ᴅᴏɴᴇ ~ ʙᴏss\n➲ 2 ᴍɪɴᴛ ᴡᴀɪᴛ ᴘʟᴇᴀsᴇ\n➲ ғɪʀ ᴀᴀᴜɴɢᴀ ᴍᴀ ᴄʜᴏᴅɴᴇ")
         try:
             await MK1.disconnect()
         except Exception:
@@ -99,7 +99,7 @@ sudousers = os.environ.get("SUDO_USER", None)
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%ssudo(?: |$)(.*)" % hl))
 async def addsudo(event):
     if event.sender_id == OWNER_ID:
-        ok = await event.reply(f"☆ мєʀα єк σʀ иєω вєтα α∂∂ нσ gαуα ☆")
+        ok = await event.reply(f"🍃 ᴍᴇʀᴀ ᴇᴋ ᴏᴜʀ ᴄᴜᴛᴇ ʙᴀᴄʜʜᴀ ᴀᴅᴅ ʜᴏ ʀᴀʜᴀ ʜᴀɪ 🍃")
         mks = "SUDO_USER"
         target = ""
         if HEROKU_APP_NAME is not None:
@@ -114,12 +114,12 @@ async def addsudo(event):
             reply_msg = await event.get_reply_message()
             target = reply_msg.sender_id
         except Exception:
-            await ok.edit("αвє נнαт кє вααℓ υραʀ ѕє ʀєρℓу ∂є ʀαнα нαι вααρ кσ")
+            await ok.edit("ᴀʙᴇ ᴊʜᴀᴛ ʙᴀᴀʟ ᴍᴇᴋᴏ ʀᴇᴘʟʏ ᴅᴇ ʀᴀʜᴀ ʜᴀɪ ʀᴜᴋ ᴛᴇʀɪ ᴍᴀ ᴄʜᴏᴅᴛᴀ ᴀʙʜɪ")
         if len(sudousers) > 0:
             newsudo = f"{sudousers} {target}"
         else:
             newsudo = f"{target}"
-        await ok.edit(f"σує нσує мєʀα иєω вєιтα︎: `{target}`\n» `ωєℓ¢σмє тσ ѕαиαтαиι ѕραм`")
+        await ok.edit(f":❤️⧽ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ 4sᴛ ᴛᴇᴀᴍ \n:🤍⧽ ɴᴇᴡ ᴜsᴇʀ ɪᴅ : `{target}`\n:🖤⧽ 𝖩𝖮𝖨𝖭 :- @I_M_FIGHTER")
         heroku_var[mks] = newsudo   
    
      
