@@ -26,11 +26,11 @@ async def echo(event):
         reply_msg = await event.get_reply_message()
         user_id = reply_msg.sender_id
         if int(user_id) in ALTRON:
-            await event.reply("αвє נнαт кє вααℓ ує тєʀα внι вααρ нαι :: мтℓв 4ѕт вαℓα нαι", parse_mode=None, link_preview=None)
+            await event.reply("➲ ᴛʜɪs ɪs [ 𝗠𝗥 𝗦𝗔𝗖𝗛𝗜𝗡 ][ 𝚂ʌŋᴀᴛᴎɩ ]\n▸ ᴛʜɪs ɪs ᴍʏ ᴏᴡɴᴇʀ ~ ᴄᴍɴᴅ ᴇʀʀᴏʀ\n▸ sᴀᴍᴊʜᴀ ʀᴀɴᴅɪ ʀᴀɴᴅ ᴋᴇ ᴘɪʟʟᴇ", parse_mode=None, link_preview=None)
         elif int(user_id) == OWNER_ID:
-            await event.reply("αвє ѕυи ує тєʀα внι вααρ нαι", parse_mode=None, link_preview=None)
+            await event.reply("➲ ᴛʜɪs ɪs 4ˢᵗ➳𝐌ɪɴᴅ 𝐆ᴀᴍᴇʀ🍃\n▸ ᴛʜɪs ɪs ᴍʏ ᴏᴡɴᴇʀ ~ ᴄᴍɴᴅ ᴇʀʀᴏʀ\n▸ sᴀᴍᴊʜᴀ ʀᴀɴᴅɪ ʀᴀɴᴅ ᴋᴇ ᴘɪʟʟᴇ", parse_mode=None, link_preview=None)
         elif int(user_id) in SUDO_USERS:
-            await event.reply("ѕυи иα внαι ℓαgтα нαι ує 4ѕт вαℓα нαι 🥰🥰", parse_mode=None, link_preview=None)
+            await event.reply("➲ sᴏʀʀʏ ᴛʜɪs ɪs sᴜᴅᴏ ᴜsᴇʀ\n➲ ʏᴇ ʙʜɪ ᴛᴇʀɪ ᴛᴀʀᴀʜ ʜɪ ʜᴀɪ\n➲ sᴀᴍᴊʜᴀ ʀᴇ ᴄʜᴏᴍᴜ ᴄʜᴜᴛɪʏᴇ", parse_mode=None, link_preview=None)
         else:
             chat_id = event.chat_id
             try:
@@ -39,10 +39,10 @@ async def echo(event):
             except BaseException:
                 pass
             if is_echo(user_id, chat_id):
-                await event.reply("єᴄнσ ραнℓє ѕє нι σи нαι ʀє мєʀє внαι")
+                await event.reply("ᴇᴄʜᴏ ᴏɴ ᴍᴇʀɪ ᴊᴀᴀɴ ᴊᴀ ᴍᴏᴊ ᴋᴀʀ")
                 return
             addecho(user_id, chat_id)
-            await event.reply("тєʀα єᴄнσ ℓαg gαуα נα ¢нσ∂ ∂є 😁😆")
+            await event.reply("ᴘʜʟᴇ sᴇ ᴇᴄʜᴏ ᴏɴ ᴍᴇʀɪ ᴊᴀᴀɴ ᴊᴀ ᴍᴏᴊ ᴋᴀʀ")
      else:
           await event.reply(usage)
 
@@ -71,9 +71,9 @@ async def rmecho(event):
             pass
         if is_echo(user_id, chat_id):
             remove_echo(user_id, chat_id)
-            await event.reply("נα ʀє נнαтυ тєʀα єᴄнσ σff нσ gαуα")
+            await event.reply("ᴇᴄʜᴏ ᴏғғ ᴊᴀ ᴀʙ ᴄʜɪʟʟ ᴍᴀʀ")
         else:
-            await event.reply("αвє נнαт кє вααℓ єᴄнσ вαнυт ραнℓє нι нαт gαуα тнα..!!")
+            await event.reply("ᴘʜʟᴇ sᴇ ʜɪ ᴇᴄʜᴏ ᴏғғ ʜᴀɪ ᴀʙ ᴄʜɪʟʟ ᴍᴀʀ")
      else:
           await event.reply(usage)
 
@@ -98,3 +98,6 @@ async def _(e):
             pass
         if e.message.text or e.message.sticker:
             await e.reply(e.message)
+
+
+
