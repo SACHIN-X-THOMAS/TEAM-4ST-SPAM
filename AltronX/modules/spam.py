@@ -31,7 +31,7 @@ from AltronX.data import GROUP, PORMS
 @MK9.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)(.*)" % hl))
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%sspam(?: |$)(.*)" % hl))
 async def spam(e):
-    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝗦𝗽𝗮𝗺\n  » {hl}spam <count> <message to spam>\n  » {hl}spam <count> <reply to a message>"
+    usage = f"𝗠𝗢𝗗𝗨𝗟𝗘 𝗡𝗔𝗠𝗘 : 𝗦𝗣𝗔𝗠\n  » {hl}spam <count> <message to spam>\n  » {hl}spam <count> <reply to a message>"
     if e.sender_id in SUDO_USERS:
         altron = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         mk = await e.get_reply_message()
@@ -69,7 +69,7 @@ async def spam(e):
 @MK9.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)(.*)" % hl))
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%spspam(?: |$)(.*)" % hl))
 async def pspam(e):
-    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝗣𝗼𝗿𝗻𝗦𝗽𝗮𝗺\n  » {hl}pspam <count>"
+    usage = f"𝗠𝗢𝗗𝗨𝗟𝗘 𝗠𝗔𝗡𝗘 : 𝗣𝗢𝗥𝗡~𝗦𝗣𝗔𝗠\n  » {hl}pspam <count>"
     if e.sender_id in SUDO_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
@@ -98,7 +98,7 @@ async def pspam(e):
 @MK9.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)(.*)" % hl))
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%shang(?: |$)(.*)" % hl))
 async def hang(e):
-    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝗛𝗮𝗻𝗴\n  » {hl}hang <count>"
+    usage = f"𝗠𝗢𝗗𝗨𝗟𝗘 𝗡𝗔𝗠𝗘 : 𝗛𝗔𝗡𝗚\n  » {hl}hang <count>"
     if e.sender_id in SUDO_USERS:
         mkh = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(mkh) == 1:
