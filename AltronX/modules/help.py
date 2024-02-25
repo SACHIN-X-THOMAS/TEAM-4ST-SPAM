@@ -2,7 +2,7 @@ from config import MK1, MK2, MK3, MK4, MK5, MK6, MK7, MK8, MK9, MK10, SUDO_USERS
 from telethon import events, Button
 
 
-PythonHelp = f" ѕαиαтαиι ѕραм нєℓρ мєиυ \n\n» **ᴄℓιᴄк σи вєℓσω вυттσиѕ fσʀ нєℓρ**\n» **∂єνєℓσρєʀ :-: @V_VIP_OWNER**"
+PythonHelp = f" 4sᴛ ғɪɢʜᴛᴇʀ ѕραм нєℓρ мєиυ \n\n» **ᴄℓιᴄк σи вєℓσω вυттσиѕ fσʀ нєℓρ**\n» **∂єνєℓσρєʀ :-: @ll4ST_MIND_GAMERII**"
 
 
 @MK1.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
@@ -18,7 +18,7 @@ PythonHelp = f" ѕαиαтαиι ѕραм нєℓρ мєиυ \n\n» **ᴄℓι�
 async def help(event):
     if event.sender_id in SUDO_USERS:
        await event.client.send_file(event.chat_id,
-                                  " https://telegra.ph/file/204854c3a0cb8cfeae36c.jpg",
+                                  " https://telegra.ph/file/e7517ce97ef5f9263e063.jpg",
                                   caption=PythonHelp,
                                   buttons=[
            [
@@ -54,7 +54,7 @@ extra_msg = f"""
   2) {hl}leave : Type in the Group bot will auto leave that group
 
 
-**© @V_VIP_OWNER**
+**© @ll4ST_MIND_GAMERII**
 """
 
                  
@@ -86,7 +86,7 @@ raid_msg = f"""
   2) {hl}craid <count> <reply to user>
 
 
-**© @V_VIP_OWNER**
+**© @ll4ST_MIND_GAMERII**
 """
 
 spam_msg = f"""
@@ -103,7 +103,7 @@ spam_msg = f"""
   1) {hl}hang <counter> (you can reply any message if you want bot to reply that message and do spamming)
 
 
-** © @V_VIP_OWNER**
+** © @ll4ST_MIND_GAMERII**
 """                     
            
            
@@ -130,13 +130,13 @@ async def helpback(event):
             Button.inline("⦿ ＥＸＴＲＡ ⦿", data="extra"),
            ],
            [
-            Button.url("⦿ ＣＨＡＮＮＥＬ ⦿", "https://t.me/SANATANI_IS_HERE"),
-            Button.url("⦿ ＳＵＰＰＯＲＴ ⦿", "https://t.me/II_4ST_FIGHTER_ll")
+            Button.url("⦿ ＣＨＡＮＮＥＬ ⦿", "https://t.me/I_M_FIGHTER"),
+            Button.url("⦿ ＳＵＰＰＯＲＴ ⦿", "https://t.me/CODEX_KA_BAAP_4ST")
            ],
            ],
         )           
    else:
-        await event.answer("𝗦𝗔𝗖𝗛𝗜𝗡 𝗦𝗔𝗡𝗔𝗧𝗔𝗡𝗜 [ @V_VIP_OWNER ] 𝗗𝗠 𝗞𝗔𝗥 𝗦𝗨𝗗𝗢 𝗠𝗜𝗟 𝗝𝗔𝗬𝗘𝗚𝗔︎ || 𝗘𝗞 𝗕𝗔𝗔𝗥 𝗣𝗔𝗣𝗔 𝗕𝗢𝗟 𝗡𝗔 𝗥𝗔𝗡𝗗𝗜 𝗞𝗘", cache_time=0, alert=True)
+        await event.answer("𝗠𝗜𝗡𝗗 𝗚𝗔𝗠𝗘𝗥 [ @ll4ST_MIND_GAMERII ] 𝗗𝗠 𝗞𝗔𝗥 𝗦𝗨𝗗𝗢 𝗠𝗜𝗟 𝗝𝗔𝗬𝗘𝗚𝗔︎ || 𝗘𝗞 𝗕𝗔𝗔𝗥 𝗣𝗔𝗣𝗔 𝗕𝗢𝗟 𝗡𝗔 𝗥𝗔𝗡𝗗𝗜 𝗞𝗘", cache_time=0, alert=True)
 
 
 @MK1.on(events.CallbackQuery(pattern=r"spam"))
@@ -155,7 +155,7 @@ async def help_spam(event):
             buttons=[[Button.inline("< ＢＡＣＫ", data="help_back"),],],
             ) 
    else:
-        await event.answer("𝗦𝗔𝗖𝗛𝗜𝗡 𝗦𝗔𝗡𝗔𝗧𝗔𝗡𝗜 [ @V_VIP_OWNER ] 𝗗𝗠 𝗞𝗔𝗥 𝗦𝗨𝗗𝗢 𝗠𝗜𝗟 𝗝𝗔𝗬𝗘𝗚𝗔︎ || 𝗘𝗞 𝗕𝗔𝗔𝗥 𝗣𝗔𝗣𝗔 𝗕𝗢𝗟 𝗡𝗔 𝗥𝗔𝗡𝗗𝗜 𝗞𝗘", cache_time=0, alert=True)
+        await event.answer("𝗠𝗜𝗡𝗗 𝗚𝗔𝗠𝗘𝗥 [ @ll4ST_MIND_GAMERII ] 𝗗𝗠 𝗞𝗔𝗥 𝗦𝗨𝗗𝗢 𝗠𝗜𝗟 𝗝𝗔𝗬𝗘𝗚𝗔︎ || 𝗘𝗞 𝗕𝗔𝗔𝗥 𝗣𝗔𝗣𝗔 𝗕𝗢𝗟 𝗡𝗔 𝗥𝗔𝗡𝗗𝗜 𝗞𝗘", cache_time=0, alert=True)
 
 
 @MK1.on(events.CallbackQuery(pattern=r"raid"))
@@ -193,4 +193,4 @@ async def help_extra(event):
             buttons=[[Button.inline("< ＢＡＣＫ", data="help_back"),],],
             )
    else:
-        await event.answer("𝗦𝗔𝗖𝗛𝗜𝗡 𝗦𝗔𝗡𝗔𝗧𝗔𝗡𝗜 [ @V_VIP_OWNER ] 𝗗𝗠 𝗞𝗔𝗥 𝗦𝗨𝗗𝗢 𝗠𝗜𝗟 𝗝𝗔𝗬𝗘𝗚𝗔︎ || 𝗘𝗞 𝗕𝗔𝗔𝗥 𝗣𝗔𝗣𝗔 𝗕𝗢𝗟 𝗡𝗔 𝗥𝗔𝗡𝗗𝗜 𝗞𝗘", cache_time=0, alert=True)
+        await event.answer("𝗠𝗜𝗡𝗗 𝗚𝗔𝗠𝗘𝗥 [ @ll4ST_MIND_GAMERII ] 𝗗𝗠 𝗞𝗔𝗥 𝗦𝗨𝗗𝗢 𝗠𝗜𝗟 𝗝𝗔𝗬𝗘𝗚𝗔︎ || 𝗘𝗞 𝗕𝗔𝗔𝗥 𝗣𝗔𝗣𝗔 𝗕𝗢𝗟 𝗡𝗔 𝗥𝗔𝗡𝗗𝗜 𝗞𝗘", cache_time=0, alert=True)
