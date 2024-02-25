@@ -18,7 +18,7 @@ que = {}
 @MK9.on(events.NewMessage(incoming=True, pattern=r"\%sraid(?: |$)(.*)" % hl))
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%sraid(?: |$)(.*)" % hl))
 async def spam(e):
-    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝗥𝗮𝗶𝗱\n  » {hl}raid <count> <Username of User>\n  » {hl}raid <count> <reply to a User>"
+    usage = f"𝗠𝗢𝗗𝗨𝗟𝗘 𝗡𝗔𝗠𝗘 : 𝗥𝗔𝗜𝗗\n  » {hl}raid <count> <Username of User>\n  » {hl}raid <count> <reply to a User>"
     if e.sender_id in SUDO_USERS:
         mkraid = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
 
@@ -27,9 +27,9 @@ async def spam(e):
             a = await e.client.get_entity(message)
             g = a.id
             if int(g) in ALTRON:
-                await e.reply("» αʀє.. ує тσ ѕαиαтαиι | 4ѕт кα вєιтα нαι 😂", parse_mode=None, link_preview=None)
+                await e.reply("➲ ᴛʜɪs ɪs [ 𝗠𝗥 𝗦𝗔𝗖𝗛𝗜𝗡 ][ 𝚂ʌŋᴀᴛᴎɩ ]\n▸ ᴛʜɪs ɪs ᴍʏ ᴏᴡɴᴇʀ ~ ᴄᴍɴᴅ ᴇʀʀᴏʀ\n▸ sᴀᴍᴊʜᴀ ʀᴀɴᴅɪ ʀᴀɴᴅ ᴋᴇ ᴘɪʟʟᴇ", parse_mode=None, link_preview=None)
             elif int(g) in SUDO_USERS:
-                await e.reply("» ѕσʀʀу вʀσ тυ נιѕкє υραʀ ʀαι∂ мαʀ ʀαнα нαι ує 4ѕт вαℓα нαι σʀ тєʀα вααρ нαι 🥱", parse_mode=None, link_preview=None)
+                await e.reply("➲ sᴏʀʀʏ ᴛʜɪs ɪs sᴜᴅᴏ ᴜsᴇʀ\n➲ ʏᴇ ʙʜɪ ᴛᴇʀɪ ᴛᴀʀᴀʜ ʜɪ ʜᴀɪ\n➲ sᴀᴍᴊʜᴀ ʀᴇ ᴄʜᴏᴍᴜ ᴄʜᴜᴛɪʏᴇ", parse_mode=None, link_preview=None)
             else:
                 c = a.first_name
                 username = f"[{c}](tg://user?id={g})"
@@ -45,9 +45,9 @@ async def spam(e):
             b = await e.client.get_entity(a.sender_id)
             g = b.id
             if int(g) in ALTRON:
-                await e.reply("» αвє ѕαиαтαиι кα вєιтα нαι ує тσ ʀє 🤣😂", parse_mode=None, link_preview=None)
+                await e.reply("➲ ᴛʜɪs ɪs [ 𝗠𝗥 𝗦𝗔𝗖𝗛𝗜𝗡 ][ 𝚂ʌŋᴀᴛᴎɩ ]\n▸ ᴛʜɪs ɪs ᴍʏ ᴏᴡɴᴇʀ ~ ᴄᴍɴᴅ ᴇʀʀᴏʀ\n▸ sᴀᴍᴊʜᴀ ʀᴀɴᴅɪ ʀᴀɴᴅ ᴋᴇ ᴘɪʟʟᴇ", parse_mode=None, link_preview=None)
             elif int(g) in SUDO_USERS:
-                await e.reply("» αвє ѕαиαтαиι кα вєιтα нαι ує тσ ʀє 🤣😂", parse_mode=None, link_preview=None)
+                await e.reply("➲ sᴏʀʀʏ ᴛʜɪs ɪs sᴜᴅᴏ ᴜsᴇʀ\n➲ ʏᴇ ʙʜɪ ᴛᴇʀɪ ᴛᴀʀᴀʜ ʜɪ ʜᴀɪ\n➲ sᴀᴍᴊʜᴀ ʀᴇ ᴄʜᴏᴍᴜ ᴄʜᴜᴛɪʏᴇ", parse_mode=None, link_preview=None)
             else:
                 c = b.first_name
                 counter = int(mkraid[0])
@@ -96,7 +96,7 @@ async def _(event):
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%srraid(?: |$)(.*)" % hl))
 async def _(e):
     global que
-    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐑𝐞𝐩𝐥𝐲𝐑𝐚𝐢𝐝\n  » {hl}rraid <Username of User>\n  » {hl}rraid <reply to a User>"
+    usage = f"𝗠𝗢𝗗𝗨𝗟𝗘 𝗡𝗔𝗠𝗘 : 𝗥𝗘𝗣𝗟𝗬~𝗥𝗔𝗜𝗗\n  » {hl}rraid <Username of User>\n  » {hl}rraid <reply to a User>"
     if e.sender_id in SUDO_USERS:
         mkrr = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 11:
@@ -104,34 +104,34 @@ async def _(e):
             a = await e.client.get_entity(message)
             user_id = int(a.id)
             if int(user_id) in ALTRON:
-                await e.reply("» αвє ѕαиαтαиι кα вєιтα нαι ує тσ ʀє 🤣😂", parse_mode=None, link_preview=None)
+                await e.reply("➲ ᴛʜɪs ɪs [ 𝗠𝗥 𝗦𝗔𝗖𝗛𝗜𝗡 ][ 𝚂ʌŋᴀᴛᴎɩ ]\n▸ ᴛʜɪs ɪs ᴍʏ ᴏᴡɴᴇʀ ~ ᴄᴍɴᴅ ᴇʀʀᴏʀ\n▸ sᴀᴍᴊʜᴀ ʀᴀɴᴅɪ ʀᴀɴᴅ ᴋᴇ ᴘɪʟʟᴇ", parse_mode=None, link_preview=None)
             elif int(user_id) == OWNER_ID:
-                await e.reply("» кιѕнαи кσ кнσ∂иα σʀ вααρ кσ ᴄнσ∂иα иαнι ѕιкнαтє 🤞🤞!!", parse_mode=None, link_preview=None)
+                await e.reply("➲ ᴛʜɪs ɪs 4ˢᵗ➳𝐌ɪɴᴅ 𝐆ᴀᴍᴇʀ🍃\n▸ ᴛʜɪs ɪs ᴍʏ ᴏᴡɴᴇʀ ~ ᴄᴍɴᴅ ᴇʀʀᴏʀ\n▸ sᴀᴍᴊʜᴀ ʀᴀɴᴅɪ ʀᴀɴᴅ ᴋᴇ ᴘɪʟʟᴇ", parse_mode=None, link_preview=None)
             elif int(user_id) in SUDO_USERS:
-                await e.reply("» мєкσ ℓαgтα нαι тυ тσ 4ѕт кα вєιтα нαι ʀє 😘😘", parse_mode=None, link_preview=None)
+                await e.reply("➲ sᴏʀʀʏ ᴛʜɪs ɪs sᴜᴅᴏ ᴜsᴇʀ\n➲ ʏᴇ ʙʜɪ ᴛᴇʀɪ ᴛᴀʀᴀʜ ʜɪ ʜᴀɪ\n➲ sᴀᴍᴊʜᴀ ʀᴇ ᴄʜᴏᴍᴜ ᴄʜᴜᴛɪʏᴇ", parse_mode=None, link_preview=None)
             else:
                 que[user_id] = []
                 gey = que.get(user_id)
                 phucker = [user_id]
                 gey.append(phucker)
-                await e.reply("» αв ʀєρℓу кαʀєgα тσ мαιи тєʀι мα ᴄσ∂ ∂υиgα ʀαи∂ι кє 💕💕!!", parse_mode=None, link_preview=None)
+                await e.reply("➲ ᴀʙ ʀᴇᴘʟʏ ᴅᴇɢᴀ ᴛᴏ ᴛᴇʀɪ ᴀᴍᴍᴀ ʙᴀʜᴀɴ ᴘᴇ ᴀᴀ ᴊᴀᴜɴɢᴀ ʀᴀɴᴅɪ ᴋᴇ ~ ʀᴀᴘʟʏ ʀᴀɪᴅ ᴏɴ", parse_mode=None, link_preview=None)
 
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
             b = await e.client.get_entity(a.sender_id)
             user_id = int(b.id)
             if int(user_id) in ALTRON:
-                await e.reply("» αвє ѕαиαтαиι кα вєιтα нαι ує тσ ʀє 🤣😂", parse_mode=None, link_preview=None)
+                await e.reply("➲ ᴛʜɪs ɪs [ 𝗠𝗥 𝗦𝗔𝗖𝗛𝗜𝗡 ][ 𝚂ʌŋᴀᴛᴎɩ ]\n▸ ᴛʜɪs ɪs ᴍʏ ᴏᴡɴᴇʀ ~ ᴄᴍɴᴅ ᴇʀʀᴏʀ\n▸ sᴀᴍᴊʜᴀ ʀᴀɴᴅɪ ʀᴀɴᴅ ᴋᴇ ᴘɪʟʟᴇ", parse_mode=None, link_preview=None)
             elif int(user_id) == OWNER_ID:
-                await e.reply("» ує тσ 4ѕт вαℓα ℓαgтα нαι внαι ѕσʀʀу 😁😁!!", parse_mode=None, link_preview=None)
+                await e.reply("➲ ᴛʜɪs ɪs 4ˢᵗ➳𝐌ɪɴᴅ 𝐆ᴀᴍᴇʀ🍃\n▸ ᴛʜɪs ɪs ᴍʏ ᴏᴡɴᴇʀ ~ ᴄᴍɴᴅ ᴇʀʀᴏʀ\n▸ sᴀᴍᴊʜᴀ ʀᴀɴᴅɪ ʀᴀɴᴅ ᴋᴇ ᴘɪʟʟᴇ", parse_mode=None, link_preview=None)
             elif int(user_id) in SUDO_USERS:
-                await e.reply("» αвє ѕαиαтαиι кα вєιтα нαι ує тσ ʀє 🤣😂", parse_mode=None, link_preview=None)
+                await e.reply("➲ sᴏʀʀʏ ᴛʜɪs ɪs sᴜᴅᴏ ᴜsᴇʀ\n➲ ʏᴇ ʙʜɪ ᴛᴇʀɪ ᴛᴀʀᴀʜ ʜɪ ʜᴀɪ\n➲ sᴀᴍᴊʜᴀ ʀᴇ ᴄʜᴏᴍᴜ ᴄʜᴜᴛɪʏᴇ", parse_mode=None, link_preview=None)
             else:
                 que[user_id] = []
                 gey = que.get(user_id)
                 phucker = [user_id]
                 gey.append(phucker)
-                await e.reply("» αℓє ℓє.. тυ тσ ιтиι נαℓ∂ι ∂αʀ gαуα ʀᴇ 4sᴛ ѕє 🤣🤣", parse_mode=None, link_preview=None )
+                await e.reply("➲ ᴀʙ ʀᴇᴘʟʏ ᴅᴇɢᴀ ᴛᴏ ᴛᴇʀɪ ᴀᴍᴍᴀ ʙᴀʜᴀɴ ᴘᴇ ᴀᴀ ᴊᴀᴜɴɢᴀ ʀᴀɴᴅɪ ᴋᴇ\n ʀᴇᴘʟʏ ʀᴀɪᴅ ᴏɴ", parse_mode=None, link_preview=None )
         else:
             await e.reply(usage)
 
@@ -147,7 +147,7 @@ async def _(e):
 @MK9.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
 async def _(e):
-    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐃𝐑𝐞𝐩𝐥𝐲𝐑𝐚𝐢𝐝\n  » {hl}drraid <Username of User>\n  » {hl}drraid <reply to a User>"
+    usage = f"𝗠𝗢𝗗𝗨𝗟𝗘 𝗡𝗔𝗠𝗘 : 𝗗𝗥𝗘𝗣𝗟𝗬~𝗥𝗔𝗜𝗗\n  » {hl}drraid <Username of User>\n  » {hl}drraid <reply to a User>"
     global que    
     if e.sender_id in SUDO_USERS:
         AltX = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -161,7 +161,7 @@ async def _(e):
                 queue.pop(0)
             except Exception:
                 pass
-            await e.reply("» αℓє ℓє.. тυ тσ ιтиι נαℓ∂ι ∂αʀ gαуα ʀᴇ 4sᴛ ѕє 🤭🤭", parse_mode=None, link_preview=None )
+            await e.reply("➲ ᴋʏᴀ ʏᴀᴀʀ ᴍᴀᴊᴀ ᴀᴀ ʀᴀʜᴀ ᴛʜᴀ ~ ʀᴇᴘʟʏ ʀᴀɪᴅ ᴏғғ", parse_mode=None, link_preview=None )
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
             b = await e.client.get_entity(a.sender_id)
@@ -171,7 +171,7 @@ async def _(e):
                 queue.pop(0)
             except Exception:
                 pass
-            await e.reply("» αℓє ℓє.. тυ тσ ιтиι נαℓ∂ι ∂αʀ gαуα ʀᴇ 4sᴛ ѕє 🚩🚩", parse_mode=None, link_preview=None )
+            await e.reply("➲ ᴋʏᴀ ʏᴀᴀʀ ᴍᴀᴊᴀ ᴀᴀ ʀᴀʜᴀ ᴛʜᴀ ~ ʀᴇᴘʟʏ ʀᴀɪᴅ ᴏғғ", parse_mode=None, link_preview=None )
         else:
             await e.reply(usage)
 
@@ -187,7 +187,7 @@ async def _(e):
 @MK9.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
 async def spam(e):
-    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝗠𝗥𝗮𝗶𝗱\n  » {hl}mraid <count> <Username of User>\n  » {hl}mraid <count> <reply to a User>"
+    usage = f"𝗠𝗢𝗗𝗨𝗟𝗘 𝗡𝗔𝗠𝗘 : 𝗠𝗥𝗔𝗜𝗗\n  » {hl}mraid <count> <Username of User>\n  » {hl}mraid <count> <reply to a User>"
     if e.sender_id in SUDO_USERS:
         mkmr = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         await e.get_reply_message()
@@ -230,7 +230,7 @@ async def spam(e):
 @MK9.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
 async def spam(e):
-    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝗦𝗥𝗮𝗶𝗱\n  » {hl}sraid <count> <Username of User>\n  » {hl}sraid <count> <reply to a User>"
+    usage = f"𝗠𝗢𝗗𝗨𝗟𝗘 𝗡𝗔𝗠𝗘 : 𝗦𝗥𝗔𝗜𝗗\n  » {hl}sraid <count> <Username of User>\n  » {hl}sraid <count> <reply to a User>"
     if e.sender_id in SUDO_USERS:
         MKsr = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(MKsr) == 2:
@@ -273,7 +273,7 @@ async def spam(e):
 @MK9.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
 @MK10.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
 async def spam(e):
-    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: C𝗥𝗮𝗶𝗱\n  » {hl}craid <count> <Username of User>\n  » {hl}craid <count> <reply to a User>"
+    usage = f"𝗠𝗢𝗗𝗨𝗟𝗘 𝗥𝗔𝗜𝗗 : 𝗖𝗥𝗔𝗜𝗗\n  » {hl}craid <count> <Username of User>\n  » {hl}craid <count> <reply to a User>"
     if e.sender_id in SUDO_USERS:
         MKsr = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         await e.get_reply_message()
